@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Objetivos do Ano</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Chakra Petch', sans-serif;
+            background-color: #f5f5f7;
+            color: #333;
+            padding: 20px;
+        }
+
+        .objetivos {
+            text-align: center;
+        }
+
+        .objetivos h1 {
+            margin-bottom: 20px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas menores */
+        }
+
+        .botao {
+            background-color: #3c2faa;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px 10px 0; /* Adiciona espaço entre os botões */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botao:hover {
+            background-color: #3A375E;
+        }
+
+        /* Estilo para dispositivos móveis */
+        @media screen and (max-width: 600px) {
+            .botoes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .botao {
+                margin-right: 0;
+            }
+        }
+
+        /* Estilo para mostrar os objetivos */
+        .objetivo {
+            margin-top: 20px;
+            display: none; /* Começam escondidos */
+        }
+
+        .objetivo:target {
+            display: block; /* Mostra o objetivo quando clicado */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="objetivos">
+            <h1>Meus Objetivos do Ano</h1>
+            <div class="botoes">
+                <button class="botao" onclick="location.href='#objetivo1'">Cursos na Alura</button>
+                <button class="botao" onclick="location.href='#objetivo2'">Criar Projetos em JavaScript</button>
+                <button class="botao" onclick="location.href='#objetivo3'">Criar um Portfólio</button>
+            </div>
+            <div id="objetivo1" class="objetivo">
+                <p>Meu objetivo é completar pelo menos três cursos na plataforma Alura este ano, abrangendo uma variedade de tópicos relevantes para o meu campo de interesse.</p>
+            </div>
+            <div id="objetivo2" class="objetivo">
+                <p>Eu pretendo desenvolver pelo menos dois projetos significativos em JavaScript, explorando diferentes bibliotecas e frameworks para aprimorar minhas habilidades de desenvolvimento web.</p>
+            </div>
+            <div id="objetivo3" class="objetivo">
+                <p>Um dos meus principais objetivos é criar um portfólio online para exibir meus projetos e habilidades. Isso incluirá a criação de um site profissionalmente projetado e a apresentação de projetos significativos.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
